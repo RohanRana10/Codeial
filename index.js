@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 
+//use express router s4
+app.use('/',require('./routes/index'));
+
 //create port s2
 const port = 8000;
 
