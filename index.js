@@ -5,6 +5,10 @@ const app = express();
 //use express router s4
 app.use('/',require('./routes/index'));
 
+//set view engine ejs s5
+app.set('view engine','ejs');
+app.set('views','./views');
+
 //create port s2
 const port = 8000;
 
