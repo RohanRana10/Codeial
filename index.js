@@ -5,6 +5,9 @@ const app = express();
 //require express layouts installed s6
 const expressLayouts = require('express-ejs-layouts');
 
+//require the db
+const db = require('./config/mongoose');
+
 //use the express layouts
 app.use(expressLayouts);
 
