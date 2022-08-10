@@ -5,11 +5,21 @@ const app = express();
 //require express layouts installed s6
 const expressLayouts = require('express-ejs-layouts');
 
+//require cookie parser installed s7
+const cookieParser = require('cookie-parser');
+
+
 //require the db
 const db = require('./config/mongoose');
 
 //use the express layouts
 app.use(expressLayouts);
+
+//for post requests
+app.use(express.urlencoded());
+
+//for cookie parser
+app.use(cookieParser());
 
 //extract styles and scripts from sub pages into the layout
 app.set('layout extractStyles', true);
