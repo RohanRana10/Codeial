@@ -1,0 +1,28 @@
+footer{
+    height: 80px;
+    background-color: maroon;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    #company-info{
+        margin-left: 15px;
+    }
+    #other-links{
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        div{
+            margin: 0px 10px 0px 0px;
+            a{
+                color: white;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    color: lightcoral;
+                }
+            }
+        }
+    }
+}

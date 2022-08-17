@@ -1,0 +1,31 @@
+header{
+    background-color: maroon;
+    height: 80px;
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            color: lightcoral;
+        }
+    }
+    #logo{
+        margin-left: 15px;
+    }
+    #profile-and-sign{
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        #profile-name{
+            margin-right: 15px;
+        }
+        #sign-in{
+            margin-right: 15px;
+        }
+    }
+}

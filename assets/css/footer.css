@@ -1,0 +1,22 @@
+footer {
+  height: 80px;
+  background-color: maroon;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem; }
+  footer #company-info {
+    margin-left: 15px; }
+  footer #other-links {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; }
+    footer #other-links div {
+      margin: 0px 10px 0px 0px; }
+      footer #other-links div a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out; }
+        footer #other-links div a:hover {
+          color: lightcoral; }

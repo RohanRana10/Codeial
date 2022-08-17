@@ -1,7 +1,28 @@
 <header id="header">
-    Page Header
+    
+    <div id="logo"><h1><a href="/">Codeial</a></h1></div>
+    <div id="profile-and-sign">
+        <% if(locals.user){ %>
+            
+            <div id="profile-name">
+                <h1><a href="/users/profile"><%= user.name %></a></h1>
+            </div>
+            <div id="sign-out">
+                <h1><a href="/users/sign-out">Sign Out</a></h1>
+            </div>
 
-    <ul>
+        <% }else { %>
+            
+            <div id="sign-in">
+                <h1><a href="/users/sign-in">Sign In</a></h1>
+            </div>
+            <div id="sign-up">
+                <h1><a href="/users/sign-up">Sign Up</a></h1>
+            </div>
+
+        <% } %>
+    </div>
+    <!-- <ul>
         <% if(locals.user){ %>
 
             <li>
@@ -21,5 +42,5 @@
             </li>
 
         <% } %>
-    </ul>
+    </ul> -->
 </header>
