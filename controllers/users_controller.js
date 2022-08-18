@@ -2,9 +2,23 @@ const User = require('../models/user');
 const passport = require('passport');
 
 module.exports.profile = function(req,res){
-    return res.render('user_profile',{
-        title: "Profile"
+    User.findById(req.params.id,function(err,user){
+        return res.render('user_profile',{
+            title: "Profile",
+            profile_user: user
+        });
     });
+}
+
+module.exports.update = function(req,res){
+    if(req.user.id == req.params.id){
+        User.findByIdAndUpdate(req.params.id, req.body, function(err,user){
+            return res.redirect('back');
+        });
+    }
+    else{
+        return res.status(401).send('Unauthorised');
+    }
 }
 
 //reder the sign up page
