@@ -5,8 +5,8 @@
 
 
 
-<% if(user.id == profile_user.id){ %>
-    <!-- if user matches, show the form -->
+<% if(user.id == profile_user.id){ %><!-- user.id is the user whose loggged in -->
+    <!-- if user matches, show the form for updation -->
     <form action="/users/update/<%= profile_user.id %>" method="post">
         <input type="text" name="name" placeholder="Your Name" value="<%= profile_user.name %>" required>
         <input type="email" name="email" placeholder="Your Email" value="<%= profile_user.email %>" required>

@@ -11,7 +11,7 @@ module.exports.home = function(req,res){
     //     });
     // });
 
-    //populate the usser of each post
+    //populate the user of each post
     Post.find({})
     .populate('user')
     .populate({

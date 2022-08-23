@@ -10,7 +10,8 @@ console.log('router loaded');
 
 //url call pe
 router.get('/',homeController.home);
-router.use('/users',require('./users'));
+
+router.use('/users',require('./users')); // meaning: whenever the path is /users, we can require the neighbour users.js
 
 router.use('/posts',require('./posts'));
 

@@ -12,16 +12,17 @@
 </head>
 <body>
 
-    <%- include('_header'); -%> 
     <!-- partials -->
+    <%- include('_header'); -%> 
+
     <main id="layout-main">
         <%- body -%> 
     <!-- this renders the reqd ejs file -->
     </main>
-    
-    <%- include('_footer'); -%>
-    <!-- partials -->
 
+    <!-- partials -->
+    <%- include('_footer'); -%>
+    
     <%- script %>
 </body>
 </html>

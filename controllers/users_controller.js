@@ -23,7 +23,7 @@ module.exports.update = function(req,res){
 
 //reder the sign up page
 module.exports.signUp = function(req,res){
-    // if below does not allow to go to sign up page after already signed in
+    // the if below does not allow to go to sign up page after already signed in
     if(req.isAuthenticated()){
         return res.redirect('/users/profile');
     }
@@ -32,7 +32,7 @@ module.exports.signUp = function(req,res){
     });
 }
 
-//reder the sign in page
+//render the sign in page
 module.exports.signIn = function(req,res){
     if(req.isAuthenticated()){
         return res.redirect('/users/profile');

@@ -2,6 +2,11 @@
     <div id="company-info"> Copyright © 2022 Codeial | All Rights Reserved</div>
     <div id="other-links">
         <div><a href="/">|| Home |</a></div>
-        <div><a href="/users/profile">| Profile ||</a></div>
+        <% if(locals.user){ %> 
+            <div><a href="/users/profile/<%= user.id %>">| Profile ||</a></div>
+        <% } else{ %>
+            <div><a href="/users/sign-in">| Sign In ||</a></div>
+        <% } %>
+        
     </div>
 </footer>
